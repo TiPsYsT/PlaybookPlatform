@@ -1,0 +1,14 @@
+{
+  "name": "playbook-platform",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "build": "node --check app.js && node --check server.mjs",
+    "lint": "node --check app.js",
+    "test": "node --test tests/*.test.mjs",
+    "start": "node server.mjs",
+    "check": "npm run build && npm run lint && npm test"
+  }
+}
